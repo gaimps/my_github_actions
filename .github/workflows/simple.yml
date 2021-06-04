@@ -10,4 +10,8 @@ jobs:
       - name: Multiline
         run: |
           node -v
-          npm -v    
+          npm -v
+      - name: run python
+        run: |
+          import platform
+          print(platform.processor())
